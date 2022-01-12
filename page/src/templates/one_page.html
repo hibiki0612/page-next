@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>C2</title>
+  <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="title">自動ページめくり機</h1>
+    </header>
+
+    <br>
+    <div class="text">
+        <h1>1ページごと操作</h1>
+    </div>
+    
+    <div class="button">
+        <form class="form" action='/one_page_go' method='get'>
+            <input type='submit'class="btn-square-shadow" value='進む'>
+        </form>
+        <form class="form" action='/one_page_back' method='get'>
+            <input type='submit'class="btn-square-shadow" value='戻る'>
+        </form>
+    </div>
+    <br>
+    <br>
+    <h2>緊急停止</h2>
+
+    <div class="button">
+        <form  action='/stop' method='get'>
+            <input type='submit'class="btn-square-shadow" value='はい'>
+        </form>
+    </div>
+
+
+</body>
+</html>

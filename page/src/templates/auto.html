@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>C2</title>
+  <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">自動ページめくり機</h1>
+    </header>
+
+    <br>
+
+    
+    <div class="text">
+        <h1>一定間隔で進む</h1>
+        <br>
+        <h3>秒数を指定して下さい</h3>
+    </div>
+
+    <form method="post" action="/auto">
+        <div class="cp_ipselect">
+            <select name="list_data" class="cp_sl06" required>
+            <option value="" hidden disabled selected></option>
+            <option value="1">10秒</option>
+            <option value="2">20秒</option>
+            <option value="3">30秒</option>
+            <option value="4">40秒</option>
+            <option value="5">50秒</option>
+            <option value="6">60秒</option>
+            </select>
+            <span class="cp_sl06_highlight"></span>
+            <span class="cp_sl06_selectbar"></span>
+            <label class="cp_sl06_selectlabel">Choose</label>
+            <div class="button">
+                <input class="btn-square-shadow" type="submit" value="送信する">
+            </div>
+        </div>
+    </form>
+    <br>
+    <h2>緊急停止</h2>
+    <div class="button">
+        <form action='/stop' method='get'>
+            <input type='submit'class="btn-square-shadow" value='緊急停止'>
+        </form>
+    </div>
+
+</body>
+</html>
